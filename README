@@ -1,0 +1,5 @@
+This repository contains solutions (mostly in C) to Project Euler problems.
+
+Don't look if you don't want spoilers!
+
+Most problems can be compiled with clang "filename.c" and executed with ./a.out . Some problems require the gmp library (libgmp.org).
