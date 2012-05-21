@@ -7,7 +7,7 @@ int main(void) {
 	
 	int i, j;
 	for(i = 0; i < 15; i++) {
-		for(j = 0; j < i; j++) {
+		for(j = 0; j <= i; j++) {
 			fscanf(input, "%d", &triangle[i][j]);
 			printf("%2d ", triangle[i][j]);
 		}
@@ -38,15 +38,8 @@ int main(void) {
 		sum = 0;
 		z++;
 		for(i = 0; i < 15; i++) {
-			if(z > 32758)
-				printf("%d ", triangle[i][xPos]);
 			sum += triangle[i][xPos];
 			xPos += route[i];
-		}
-		if(z > 32758) {
-			for(int a = 0; a < 15; a++)
-				printf("%d", route[a]);
-			printf("\n%d: %d\n", z, sum);
 		}
 		if(sum > max)
 			max = sum;
