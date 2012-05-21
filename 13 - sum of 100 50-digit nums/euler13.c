@@ -16,11 +16,9 @@ int main(void) {
 	for(i = 0; i < 100; i++) {
 		gmp_fscanf(input, "%Zd", temp);
 		gmp_printf("%Zd\n", temp);
-		//gmp_sscanf(str, "%Z", temp);
 		mpz_add(sum, sum, temp);
 	}
 
-	gmp_printf("%Zd", sum);
-
+	gmp_printf("SUM:\n%Zd\n", sum);
 	return 0;
 }
