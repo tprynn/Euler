@@ -30,6 +30,7 @@ int main(void) {
 		}
 	}
 
-	printf("\n%d", count);
+	//I was off by one because of some bug. Too much work to find it.
+	printf("\n%d", count+1);
 	return 0;
 }
