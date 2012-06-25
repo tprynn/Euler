@@ -6,7 +6,7 @@ int main(void) {
 	int i, sum = 0, count = 0;
 	
 	for(i = 0; i < 30; i++) {
-		nums[i] = (i+1) * (i+2) / 2;
+		nums[i] = i * (i+1) / 2;
 	}
 	
 	FILE *words = fopen("words.txt", "r");
@@ -30,7 +30,6 @@ int main(void) {
 		}
 	}
 
-	//I was off by one because of some bug. Too much work to find it.
-	printf("\n%d", count+1);
+	printf("\n%d", count);
 	return 0;
 }
