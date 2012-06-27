@@ -7,7 +7,9 @@ long long travel(int x, int y) {
 }
 
 int main(void) {
-	long long count = travel(4,4);
+	//Warning: This recursive implementation is VERY slow for travel(20,20)
+	//For smaller grids it works better, and is an "elegant" solution
+	long long count = travel(20,20);
 	printf("%lld", count);
 	return 0;
 }

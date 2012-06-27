@@ -15,8 +15,10 @@ int main(void) {
 			mpz_add(sum, sum, temp);
 		}
 	}
+	
 	gmp_printf("%Zd", sum);
-	return;
+	
+	return 0;
 }
 
 int isPrime(int x) {
@@ -25,5 +27,6 @@ int isPrime(int x) {
 		if(x % i == 0)
 			return 0;
 	}
+	
 	return 1;
 }

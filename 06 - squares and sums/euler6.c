@@ -13,4 +13,6 @@ int main(void) {
 	
 	int x = squareSums-sumSquares;
 	printf("%d", x);
+	
+	return 0;
 }

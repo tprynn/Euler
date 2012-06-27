@@ -10,11 +10,11 @@ int main(void) {
 					continue;
 				if(a*a + b*b == c*c) {
 					printf("%d %d %d = %d\n", a, b, c, a*b*c);
-					return;
+					return 0;
 				}
 			}
 		}
 	}
 	
-	return;
+	return 0;
 }

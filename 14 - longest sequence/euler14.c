@@ -8,12 +8,10 @@ int main(void) {
 		n = i;
 		counter = 0;
 		while(n > 1) {
-			if(n%2 == 0) {
+			if(n%2 == 0)
 				n = n/2;
-			}
-			else {
+			else
 				n = 3*n+1;
-			}
 			counter++;
 		}
 		if(counter > longest) {

@@ -18,15 +18,19 @@ int numDivisors(long long x) {
 	long long i;
 	int divisors = 1, exponent, temp;
 	
+	//For each potential prime divisor of x in the list of 50k primes
 	for(i = 0; i < 50000 && primes[i] <= x; i++) {
+		//If the prime divides x
 		if(x % primes[i] == 0) {
 			exponent = 1;
 			temp = x/primes[i];
+			//Find the number of times x is divided by it
 			while(temp % primes[i] == 0) {
 				temp = temp/primes[i];
 				exponent++;
 			}
-			divisors *= exponent + 1;
+			//The number of divisors is a composite of every prime that divides x
+			divisors *= exponent + 1;	// The Tau function
 		}
 	}
 	

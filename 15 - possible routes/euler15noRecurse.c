@@ -12,6 +12,7 @@ int main(void) {
 	mpz_init(denom);
 	mpz_set_ui(denom, 1);
 	
+	// A solution by combinatorics: Choose(40,20) => 40!/20! = 40*39*38*..*21*20
 	for(int i = 40; i > 20; i--) {
 		mpz_mul_ui(numer, numer, i);
 		mpz_mul_ui(denom, denom, i-20);
