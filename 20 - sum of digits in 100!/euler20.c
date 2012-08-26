@@ -10,6 +10,7 @@ int main(void) {
 		mpz_mul_si(factorial, factorial, i);
 	}
 
+	//Convert 100! to a string to more easily access the digits
 	char factorialString[1000];
 	int length = gmp_sprintf(factorialString, "%Zd", factorial);
 	

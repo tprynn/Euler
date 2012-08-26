@@ -19,6 +19,7 @@ int main(void) {
 	int route[15];
 	int xPos, z = 0;
 	
+	//Yes, this is awful. I couldn't get the recursive search to work!
 	for(route[0] = 0; route[0] <= 1; route[0]++) {
 	for(route[1] = 0; route[1] <= 1; route[1]++) {
 	for(route[2] = 0; route[2] <= 1; route[2]++) {

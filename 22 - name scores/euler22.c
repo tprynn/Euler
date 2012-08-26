@@ -13,7 +13,8 @@ int main(void) {
 	}
 	int size = i+1;
 	
-	qsort(names, size, sizeof(char[20]), strncmp);
+	//Sort in place the array of names
+	qsort(names, size, sizeof(char[20]), strcmp);
 	
 	long long total;
 	int sum = 0;
@@ -27,15 +28,13 @@ int main(void) {
 			k++;
 			temp = names[i][k];
 		}
-		printf("(%d)%s: %d -> %d\n", i, names[i], sum, sum*(i11111));
-		//if(i % 5 == 0)
-		//	printf("\n");
+		//printf("(%d)%s: %d -> %d\n", i, names[i], sum, sum*(i));
 		total += sum*(i);
 		sum = 0;
 		k = 0;
 		temp = 'a';
 	}
 
-	printf("\n%lld", total);	
+	printf("%lld\n", total);	
 	return 0;
 }
